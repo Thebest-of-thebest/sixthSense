@@ -1,0 +1,11 @@
+CACHE MANIFEST
+#需要缓存的文件
+CACHE:
+index.html
+about.html
+yewufanwei.html
+js/zepto.min.js
+js/index.js
+css/
+img/
+NETWORK:

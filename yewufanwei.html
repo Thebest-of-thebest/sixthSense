@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" MANIFEST="./offline.appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>互联网+-广东第六感文化传播有限公司</title>
+    <link rel="stylesheet" href="./css/reset.min.css">
+    <link rel="stylesheet" href="./css/yewufanwei.css">
+    <script>
+        /*根据当前设备的宽度，动态计算出REM的换算比例，实现页面中元素的等比缩放*/
+        +function anonymous(window) {
+            let computedREM = function() {
+                let winW = document.documentElement.clientWidth,
+                        desW = 640;
+                if(winW>=640) {
+                    document.documentElement.style.fontSize = '100px';
+                    return;
+                }
+                document.documentElement.style.fontSize =winW/desW*100+'px'
+            }
+            computedREM();
+            window.addEventListener('resize',computedREM);
+        }(window);
+    </script>
+</head>
+<body>
+    <div class="mobile">
+        <header id="header">
+            <div class="header-content">
+                <div class="back"><img src="./img/back.png" alt="微信小程序开发"></div>
+                <h1><img src="./img/logo.png" alt="广东第六感传媒logo"></h1>
+                <div class="menu"><img src="./img/navbtn.png" alt="佛山微信小程序开发"></div>
+            </div>
+            <div class="header-content-fixed">
+                <div class="back"><img src="./img/back_on.png" alt="微信小程序开发"></div>
+                <h1><img src="./img/logo-fixed.png" alt="广东第六感传媒logo"></h1>
+                <div class="menu"><img src="./img/navbtn-fixed.png" alt="佛山微信小程序开发"></div>
+                <div class="bg"></div>
+            </div>
+        </header>
+        <div class="main">
+            <ul>
+                <li>
+                    <div>
+                        <h2>微信小程序开发</h2>
+                        <p>
+                            小程序背靠微信8亿用户，极大的用户流量。
+                            使得企业可以让更多人关注，更好的展示企业的形象。
+                            第六感传媒提供的小程序开发服务，可以根据客户的不同行业、不同类型，
+                            辅以一套特色的小程序视觉识别系统，从而制定一个最适合的形象。
+                            用最合适的展示方式、展示效果。宣传展示企业形象。
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h2>微信平台开发</h2>
+                        <p>
+                            微信平台着重展示企业文化和品牌特色，非常强调创意设计与文化的结合，
+                            能通过视觉感官的冲击，令目标受众对品牌产生深刻而美好的印象。
+                            第六感传媒利用多媒体交互技术、动态网页技术，配合广告设计，
+                            将企业品牌形象在微信平台上多维度、全方位、立体式地表现出来。
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h2>移动网上商城</h2>
+                        <p>
+                            移动商城开辟了属于自己的稳定的营销渠道，能扩大市场份额，
+                            建立直销、分销等不同模式的电商运营管理系统，
+                            同时还可接触最直接消费者，获得第一手产品市场反馈。
+                            第六感传媒能为客户建立符合自身特点的移动网上商城。
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h2>互动微分销</h2>
+                        <p>
+                            互动微分销的特点在于能加强与客户之间的交流，利用移动互联网的特性，
+                            提升客户管理的准确性、高效性，从而打造品牌、提升销售业绩。
+                            小程序商城中的微分销正是能精准把握企业与消费者的共同利益点，
+                            找到巧妙的沟通时机和方法将二者紧密结合起来。
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h2>APP客户端开发</h2>
+                        <p>
+                            APP客户端开发是专门针对企业进行定制的功能型移动客户端，
+                            是企业直接与用户进行交流，展示商品、提供服务、互动交流的空中接口。
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h2>多渠道运营推广</h2>
+                        <p>
+                            多渠道运营管理是第六感传媒为广大中小企业量身定制的一套完整的运营管理体系。
+                            通过开通多种宣传销售平台账号，进行一站式管理和科学的数据统计分析。
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            <div id="customer">
+                <a href="http://wpa.qq.com/msgrd?v=3&uin=2773726593&site=qq&menu=yes">
+                    <img src="./img/ico3.png" alt="客服咨询">
+                    <span>客服咨询</span>
+                </a>
+            </div>
+            <div id="tel">
+                <a href="tel:18588009997">
+                    <img src="./img/ico1.png" alt="电话咨询">
+                    <span>电话咨询</span>
+                </a>
+            </div>
+            <div id="message">
+                <a href="sms:18588009997">
+                    <img src="./img/ico2.png" alt="短信咨询">
+                    <span>短信咨询</span>
+                </a>
+            </div>
+        </div>
+        <div class="maskLayer">
+            <div class="transition">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a class="active" href="yewufanwei.html">服务领域</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/zepto.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh" MANIFEST="./offline.appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>互联网+-广东第六感文化传播有限公司</title>
+    <link rel="stylesheet" href="./css/reset.min.css">
+    <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script>
+            /*根据当前设备的宽度，动态计算出REM的换算比例，实现页面中元素的等比缩放*/
+        +function anonymous(window) {
+            let computedREM = function() {
+                let winW = document.documentElement.clientWidth,
+                        desW = 640;
+                if(winW>=640) {
+                    document.documentElement.style.fontSize = '100px';
+                    return;
+                }
+                document.documentElement.style.fontSize =winW/desW*100+'px'
+            }
+            computedREM();
+            window.addEventListener('resize',computedREM);
+        }(window);
+    </script>
+</head>
+<body>
+<div class="mobile">
+    <header id="header">
+        <div class="header-content">
+            <h1><img src="./img/logo.png" alt="广东第六感传媒logo"></h1>
+            <div class="menu"><img src="./img/navbtn.png" alt="佛山微信小程序开发"></div>
+        </div>
+        <div class="header-content-fixed">
+            <h1><img src="./img/logo-fixed.png" alt="广东第六感传媒logo"></h1>
+            <div class="menu"><img src="./img/navbtn-fixed.png" alt="佛山微信小程序开发"></div>
+            <div class="bg"></div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="javascript:;"><img src="./img/01.jpg" alt="轮播图"></a></div>
+                <div class="swiper-slide"><a href="javascript:;"><img src="./img/02.jpg" alt="轮播图"></a></div>
+                <div class="swiper-slide"><a href="javascript:;"><img src="./img/03.jpg" alt="轮播图"></a></div>
+                <div class="swiper-slide"><a href="javascript:;"><img src="./img/04.jpg" alt="轮播图"></a></div>
+                <div class="swiper-slide"><a href="javascript:;"><img src="./img/05.jpg" alt="轮播图"></a></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="service">
+            <h2><span>服务领域</span></h2>
+            <ul>
+                <li><a href="yewufanwei.html"><img src="./img/hservice_2.png" alt="微信小程序开发公司"><span>小程序开发</span></a></li>
+                <li><a href="yewufanwei.html"><img src="./img/hservice_1.png" alt="微信公众平台开发"><span>微信平台开发</span></a></li>
+                <li><a href="yewufanwei.html"><img src="./img/hservice_4.png" alt="移动网上商城"><span>移动网上商城</span></a></li>
+                <li><a href="yewufanwei.html"><img src="./img/hservice_3.png" alt="互动微粉销"><span>互动微粉销</span></a></li>
+                <li><a href="yewufanwei.html"><img src="./img/hservice_5.png" alt="APP开发"><span>App开发</span></a></li>
+                <li><a href="yewufanwei.html"><img src="./img/hservice_6.png" alt="多渠道运营"><span>多渠道运营</span></a></li>
+            </ul>
+        </div>
+        <div class="moreService">
+            <h2><span>更多服务</span></h2>
+            <ul>
+                <li><span class="title">媒体传播</span><img src="./img/website-img-2.jpg" alt="媒体传播"></li>
+                <li><span class="title">金融扶持</span><img src="./img/jinrong.jpg" alt="金融扶持"></li>
+                <li><img src="./img/website-img-4.jpg" alt="支付宝小程序开发"><span class="title">支付宝小程序开发</span></li>
+                <li><img src="./img/website-img-2.jpg" alt="全网营销"><span class="title">全网营销</span></li>
+            </ul>
+            <div>
+                <span>腾讯社交广告</span>
+                <img src="./img/pengyouquan.png" alt="腾讯社交广告">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div id="customer">
+            <a href="http://wpa.qq.com/msgrd?v=3&uin=2773726593&site=qq&menu=yes">
+                <img src="./img/ico3.png" alt="客服咨询">
+                <span>客服咨询</span>
+            </a>
+        </div>
+        <div id="tel">
+            <a href="tel:18588009997">
+                <img src="./img/ico1.png" alt="电话咨询">
+                <span>电话咨询</span>
+            </a>
+        </div>
+        <div id="message">
+            <a href="sms:18588009997">
+                <img src="./img/ico2.png" alt="短信咨询">
+                <span>短信咨询</span>
+            </a>
+        </div>
+    </div>
+    <div class="maskLayer">
+        <div class="transition">
+            <ul>
+                <li><a class="active" href="index.html">首页</a></li>
+                <li><a href="yewufanwei.html">服务领域</a></li>
+                <li><a href="about.html">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<script src="js/zepto.min.js"></script>
+<script src="./js/swiper-3.4.2.jquery.min.js"></script>
+<script src="./js/index.js"></script>
+<script>
+    new Swiper('.swiper-container',{
+        loop: false,
+        autoplay: 2000,
+        speed: 1000,
+        pagination: '.swiper-pagination',
+        autoplayDisableOnInteraction: false
+    });
+</script>
+</body>
+</html>
+<!--
+    遇到问题：
+        使用transition过渡存在问题
+-->
